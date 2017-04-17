@@ -61,7 +61,7 @@
 /// 源视图
 @property (nonatomic, weak)UIView *sourceView;
 /// 源item
-@property (nonatomic, weak)UIBarButtonItem *sourceBarButtonItem;
+@property (nonatomic, weak)UIBarButtonItem *sourceItem;
 @end
 @implementation HHBadge
 + (instancetype)badge {
@@ -319,8 +319,8 @@
     
     self.style = [[HHDotBadgeStyle alloc]init];
 }
-- (void)setSourceBarButtonItem:(UIBarButtonItem *)item {
-    [super setSourceBarButtonItem:item];
+- (void)setSourceItem:(UIBarButtonItem *)item {
+    [super setSourceItem:item];
     [self scaleBy:0.7];
     [self moveByX:-5.0 Y:0];
 }
@@ -481,7 +481,7 @@
         
         [self willChangeValueForKey:@"hh_badge"];
         objc_setAssociatedObject(self, @selector(hh_badge), badge, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        badge.sourceBarButtonItem = self;
+        badge.sourceItem = self;
         [self didChangeValueForKey:@"hh_badge"];
     }
 }
