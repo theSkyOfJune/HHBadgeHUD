@@ -413,7 +413,7 @@
 #pragma mark - Setter
 - (void)setCount:(NSInteger)count {
     _count = count;
-    self.countLabel.text = [NSString stringWithFormat:@"%ld", (long)count];
+    self.countLabel.text = [NSString stringWithFormat:@"%@", @(count)];
     HHCountBadgeStyle *style = (HHCountBadgeStyle *)self.style;
     if (style.automaticExpansion) [self expandToFit];
 }
