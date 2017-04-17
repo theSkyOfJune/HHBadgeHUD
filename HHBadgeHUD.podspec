@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HHBadgeHUD"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "A HHBadgeHUD For iOS Development"
   s.homepage     = "https://github.com/theSkyOfJune/HHBadgeHUD"
 

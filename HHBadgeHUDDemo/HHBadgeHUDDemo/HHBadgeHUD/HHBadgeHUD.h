@@ -52,7 +52,7 @@ typedef NS_ENUM(NSUInteger, HHBadgeAnimationType) {
 
 @interface HHBadge : NSObject {
     __weak UIView *_sourceView;
-    __weak UIBarButtonItem *_sourceBarButtonItem;
+    __weak UIBarButtonItem *_sourceItem;
 }
 
 #pragma mark - setup
@@ -65,7 +65,7 @@ typedef NS_ENUM(NSUInteger, HHBadgeAnimationType) {
 /// 源视图
 @property (nonatomic, weak, readonly)UIView *sourceView;
 /// 源item
-@property (nonatomic, weak, readonly)UIBarButtonItem *sourceBarButtonItem;
+@property (nonatomic, weak, readonly)UIBarButtonItem *sourceItem;
 
 @end
 
