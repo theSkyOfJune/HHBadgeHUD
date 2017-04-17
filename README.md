@@ -43,7 +43,7 @@
 
     // 2. 给UIBarButtonItem添加通知图标
     self.item.hh_badge = [HHCountBadge badgeWithCount:99];
-    使用方法和上述一样， 有一点需要注意，给item设置此属性时不保证此时item的view属性已被加载，也是不为空
+    使用方法和上述一样， 有一点需要注意，给item设置此属性时需保证此时item的view属性已被加载，也即不为nil。
 
 ###点图标样式
 
@@ -120,8 +120,8 @@
 ###通知图标基类HHBadge
 
     @interface HHBadge : NSObject {
-    __weak UIView *_sourceView;
-    __weak UIBarButtonItem *_sourceBarButtonItem;
+        __weak UIView *_sourceView;
+        __weak UIBarButtonItem *_sourceBarButtonItem;
     }
 
     /// 快速创建实例
