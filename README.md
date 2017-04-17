@@ -46,6 +46,7 @@
     使用方法和上述一样， 有一点需要注意，给item设置此属性时不保证此时item的view属性已被加载，也是不为空
 
 ###点图标样式
+
     // 1. 给UIView添加通知图标
     self.oneView.hh_badge = [HHCountBadge badge];
     // 配置外观样式
@@ -117,6 +118,7 @@
 
 
 ###通知图标基类HHBadge
+
     @interface HHBadge : NSObject {
     __weak UIView *_sourceView;
     __weak UIBarButtonItem *_sourceBarButtonItem;
