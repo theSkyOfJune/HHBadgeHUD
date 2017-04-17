@@ -92,7 +92,7 @@
     /// 边框宽度
     @property (nonatomic, assign)CGFloat borderWidth;
 
-    /// 是否有扣扣的粘性效果 default NO 此功能暂时未实现 后继版本加入
+    /// 是否支持QQ的粘性拖拽效果 default NO 此功能暂时未实现 后继版本加入
     //@property (nonatomic, assign, getter=haveGooEffect)BOOL gooEffect;
 
     @end
